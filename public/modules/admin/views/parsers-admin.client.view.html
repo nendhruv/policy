@@ -1,0 +1,26 @@
+<section ng-controller="parsersController" ng-init="getParsers()">
+	<div class="page-header">
+		<h1>Parsers</h1>
+	</div>
+	<div ng-repeat="parser in parsers" ng-click="showChecker(parser.name)">
+		<md-toolbar class="md-primary" layout="row" >
+		<h1 class="md-toolbar-tools" flex="90">
+		  <section class="md-accent" >{{parser.name}}</section>
+		</h1>
+		</md-toolbar>
+		<md-content class="md-padding" ng-show="parser.check">
+			<form name="projectForm">
+				<div layout="row">
+				<md-input-container flex="75" class="md-accent md-hue-2">
+					<label>URL</label>
+					<input type="text" id="urlParse" ng-model="urlParse">
+				</md-input-container>
+				<md-input-container flex="25">
+					<md-button class="md-raised md-accent md-hue-1" ng-click="validateParser(urlParse,parser.name)">Check</md-button>
+				</md-input-container>
+				</div>
+			</form>
+		</md-content>
+		<br><br>
+	</div>
+</section>

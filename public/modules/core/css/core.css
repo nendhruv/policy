@@ -18,3 +18,101 @@ body.ng-cloak
 {
 	display: block;
 }
+
+/************ posts CSS *************/
+
+.post-offset{
+	margin-left: 30%;
+}
+
+.navigation{
+	position: fixed;
+	left: -9%;
+	background-color: #512da8;
+	height: 100%;
+	width: 15%;
+}
+
+.filter{
+	position: relative;
+	margin-top: 33%;
+	left: 65%;
+	color: #e91e63;
+	transition: left 0.5s ease; 
+}
+.filter2{
+	position: relative;
+	margin-top: 13%;
+	left: 65%;
+	color: #e91e63;
+	transition: left 0.5s ease; 
+}
+
+.filter-active{
+	left: 4%;
+}
+
+.navigation-select{
+	position: fixed;
+	left:0%;
+	background-color: #4a148c;
+	height: 100%;
+	width: 15%;
+	transition: left 0.5s ease; 
+
+}
+
+.border{
+	border-top: #e91e63 5px solid;
+	margin-top: 5%;
+	width: 100%;
+}
+
+header{
+	background: #fff !important;
+	background-image: none !important;
+	border: 0 !important;
+}
+
+.post{
+	text-align: center;
+	border: #4a148c 1px solid;
+	margin-top: 15%;
+	background: #fff;
+	box-shadow: 3px 3px 1px #4a148c;
+}
+
+.sub-filter, .sub-filter2{
+	text-align: center;
+	display: block;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+.sub-filter-active, .sub-filter-active2{
+	text-align: center;
+	display: block;
+	opacity: 1;
+	transition: opacity 0.5s ease;
+}
+
+.name{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: 5%;
+	text-align: left;
+	border-bottom: 1px solid #e91e63
+
+}
+
+.description{
+	margin-top: 5%;
+}
+.image{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.fa{
+	font-size: 2em;
+}
+
